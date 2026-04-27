@@ -1,0 +1,139 @@
+﻿store(&VERSION) '10.0'
+store(&COPYRIGHT) 'Copyright © 网络赣语研究会©'
+store(&KEYBOARDVERSION) '11.9.7'
+store(&TARGETS) 'any'
+store(&NAME) 'gekuado'
+store(&BITMAP) 'gekuado.ico'
+store(&VISUALKEYBOARD) 'gekuado.kvks'
+store(&LAYOUTFILE) 'gekuado.keyman-touch-layout'
+
+begin Unicode > use(main)
+
+group(main) using keys
+
+store(vowels) 'aiueoüAIUEOÜ'
+store(vowels_tone1) 'āīūēōǖĀĪŪĒŌǕ'
+store(vowels_tone2) 'áíúéóǘÁÍÚÉÓǗ'
+store(vowels_tone3) 'ǎǐǔěǒǚǍǏǓĚǑǙ'
+store(vowels_tone4) 'àìùèòǜÀÌÙÈÒǛ'
+store(vowels_tone5) 'ąįũęøůÀÌÙÈÒǛ'
+store(vowels_tone6) 'âîûêôųÀÌÙÈÒǛ'
+
++ 'w' > 'ü'
++ 'W' > 'Ü'
+
+'ü' + 'w' > 'w'
+'Ü' + 'W' > 'W'
+'Ü' + 'W' > 'W'
+
+any(vowels) + "j" > index(vowels_tone1, 1)
+any(vowels) "n" + "j" > index(vowels_tone1, 1) "n"
+any(vowels) "N" + "j" > index(vowels_tone1, 1) "N"
+any(vowels) "ng" + "j" > index(vowels_tone1, 1) "ng"
+any(vowels) "NG" + "j" > index(vowels_tone1, 1) "NG"
+any(vowels) "j" + "j" > index(vowels_tone1, 1) "j"
+any(vowels) "J" + "j" > index(vowels_tone1, 1) "J"
+any(vowels) "nj" + "j" > index(vowels_tone1, 1) "nj"
+any(vowels) "NJ" + "j" > index(vowels_tone1, 1) "NJ"
+any(vowels) "ngj" + "j" > index(vowels_tone1, 1) "ngj"
+any(vowels) "NGJ" + "j" > index(vowels_tone1, 1) "NGJ"
+
+any(vowels) + "r" > index(vowels_tone2, 1)
+any(vowels) "n" + "r" > index(vowels_tone2, 1) "n"
+any(vowels) "N" + "r" > index(vowels_tone2, 1) "N"
+any(vowels) "ng" + "r" > index(vowels_tone2, 1) "ng"
+any(vowels) "NG" + "r" > index(vowels_tone2, 1) "NG"
+any(vowels) "r" + "r" > index(vowels_tone2, 1) "r"
+any(vowels) "R" + "r" > index(vowels_tone2, 1) "R"
+any(vowels) "nr" + "r" > index(vowels_tone2, 1) "nr"
+any(vowels) "NR" + "r" > index(vowels_tone2, 1) "NR"
+any(vowels) "ngr" + "r" > index(vowels_tone2, 1) "ngr"
+any(vowels) "NGR" + "r" > index(vowels_tone2, 1) "NGR"
+
+any(vowels) + "d" > index(vowels_tone3, 1)
+any(vowels) "n" + "d" > index(vowels_tone3, 1) "n"
+any(vowels) "N" + "d" > index(vowels_tone3, 1) "N"
+any(vowels) "ng" + "d" > index(vowels_tone3, 1) "ng"
+any(vowels) "NG" + "d" > index(vowels_tone3, 1) "NG"
+any(vowels) "r" + "d" > index(vowels_tone3, 1) "r"
+any(vowels) "R" + "d" > index(vowels_tone3, 1) "R"
+any(vowels) "nr" + "d" > index(vowels_tone3, 1) "nr"
+any(vowels) "NR" + "d" > index(vowels_tone3, 1) "NR"
+any(vowels) "ngr" + "d" > index(vowels_tone3, 1) "ngr"
+any(vowels) "NGR" + "d" > index(vowels_tone3, 1) "NGR"
+
+any(vowels) + "f" > index(vowels_tone4, 1)
+any(vowels) "n" + "f" > index(vowels_tone4, 1) "n"
+any(vowels) "N" + "f" > index(vowels_tone4, 1) "N"
+any(vowels) "ng" + "f" > index(vowels_tone4, 1) "ng"
+any(vowels) "NG" + "f" > index(vowels_tone4, 1) "NG"
+any(vowels) "j" + "f" > index(vowels_tone4, 1) "j"
+any(vowels) "J" + "f" > index(vowels_tone4, 1) "J"
+any(vowels) "nj" + "f" > index(vowels_tone4, 1) "nj"
+any(vowels) "NJ" + "f" > index(vowels_tone4, 1) "NJ"
+any(vowels) "ngj" + "f" > index(vowels_tone4, 1) "ngj"
+any(vowels) "NGJ" + "f" > index(vowels_tone4, 1) "NGJ"
+
+any(vowels) + "k" > index(vowels_tone5, 1)
+any(vowels) "n" + "k" > index(vowels_tone5, 1) "n"
+any(vowels) "N" + "k" > index(vowels_tone5, 1) "N"
+any(vowels) "ng" + "k" > index(vowels_tone5, 1) "ng"
+any(vowels) "NG" + "k" > index(vowels_tone5, 1) "NG"
+any(vowels) "j" + "k" > index(vowels_tone5, 1) "j"
+any(vowels) "J" + "k" > index(vowels_tone5, 1) "J"
+any(vowels) "nj" + "k" > index(vowels_tone5, 1) "nj"
+any(vowels) "NJ" + "k" > index(vowels_tone5, 1) "NJ"
+any(vowels) "ngj" + "k" > index(vowels_tone5, 1) "ngj"
+any(vowels) "NGJ" + "k" > index(vowels_tone5, 1) "NGJ"
+
+any(vowels) + "l" > index(vowels_tone6, 1)
+any(vowels) "n" + "l" > index(vowels_tone6, 1) "n"
+any(vowels) "N" + "l" > index(vowels_tone6, 1) "N"
+any(vowels) "ng" + "l" > index(vowels_tone6, 1) "ng"
+any(vowels) "NG" + "l" > index(vowels_tone6, 1) "NG"
+any(vowels) "r" + "l" > index(vowels_tone6, 1) "r"
+any(vowels) "R" + "l" > index(vowels_tone6, 1) "R"
+any(vowels) "nr" + "l" > index(vowels_tone6, 1) "nr"
+any(vowels) "NR" + "l" > index(vowels_tone6, 1) "NR"
+any(vowels) "ngr" + "l" > index(vowels_tone6, 1) "ngr"
+any(vowels) "NGR" + "l" > index(vowels_tone6, 1) "NGR"
+
+"l" + "r" > "ł"
+"n" + ";" > "ñ"
++ 'r' > 'ŗ'
++ 'c' > 'ċ'
+"g" + "h" > "ğ"
+"y" + "t" > "j"
+"t" + "s" > "c"
+"p" + "h" > "f"
+"t" + "d" > "d"
+"t" + "l" > "l"
+"t" + "y" > "ŗ"
+
+"ai" + "j" > "āi"
+"ai" + "r" > "ái"
+"ai" + "d" > "ǎi"
+"ai" + "f" > "ài"
+"ai" + "k" > "ai"
+"ai" + "l" > "âi"
+
+"ao" + "j" > "āo"
+"ao" + "r" > "áo"
+"ao" + "d" > "ǎo"
+"ao" + "f" > "ào"
+"ao" + "k" > "ao"
+"ao" + "l" > "âo"
+
+"ei" + "j" > "ēi"
+"ei" + "r" > "éi"
+"ei" + "d" > "ěi"
+"ei" + "f" > "èi"
+"ei" + "k" > "ei"
+"ei" + "l" > "êi"
+
+"ou" + "j" > "ōu"
+"ou" + "r" > "óu"
+"ou" + "d" > "ǒu"
+"ou" + "f" > "òu"
+"ou" + "k" > "ou"
+"ou" + "l" > "ôu"
