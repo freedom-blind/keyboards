@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project>
+  <Options>
+    <Version>10.9.2</Version>
+  </Options>
+  <Files>
+    <File path="source/gekuado.kmn"/>
+    <File path="source/gekuado.kps"/>
+    <File path="source/gekuado.kvks"/>
+  </Files>
+</Project>
